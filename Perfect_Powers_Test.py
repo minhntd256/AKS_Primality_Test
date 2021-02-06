@@ -6,7 +6,7 @@ def perfect_power(n):
         a = 1
         c = n
         while c - a >= 2:
-            m = (a+c)/2
+            m = (a+c)//2
             p = min(m**b, n+1)
             if p == n:
                 return True

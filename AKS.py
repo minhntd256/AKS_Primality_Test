@@ -33,7 +33,6 @@ def AKS(n):
         return 'PRIME'
     
     #step 5 + 6
-    
     l = int(math.floor(math.sqrt(phi(r))*math.log(n,2)))
     for a in range(0,l+1):
         if fast_powering(a,n,n) != fast_powering(a,1,n):
@@ -43,12 +42,12 @@ def AKS(n):
 li = []
 
 
-for i in range(10000):
-    if AKS(i) == 'PRIME':
-        li.append(i)
-print(li == test)
+# for i in range(10000):
+#     if AKS(i) == 'PRIME':
+#         li.append(i)
+# print(li == test)
 
 start = time.time()
-print(AKS(9824516530))
+print(AKS(443060353998445655840854662515542076714707))
 end = time.time()
 print(end-start)

@@ -7,7 +7,7 @@ def fast_powering(g,a, N):
         if u % 2 != 0:
             c = (c*s) % N
         s = (s*s) % N
-        u = math.floor(u//2)
+        u = u//2
     return c
 
 
