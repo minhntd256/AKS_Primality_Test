@@ -39,15 +39,3 @@ def AKS(n):
             return 'COMPOSITE'
     #step 7
     return 'PRIME'
-li = []
-
-
-# for i in range(10000):
-#     if AKS(i) == 'PRIME':
-#         li.append(i)
-# print(li == test)
-
-start = time.time()
-print(AKS(443060353998445655840854662515542076714707))
-end = time.time()
-print(end-start)
