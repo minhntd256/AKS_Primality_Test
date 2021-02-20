@@ -1,4 +1,6 @@
-def perfect_power(n):
+import math
+from decimal import *
+def perfect_power1(n):
     b = 2
     if n < 2:
         return True
@@ -20,4 +22,25 @@ def perfect_power(n):
 # for i in range(30):
 #     print(i,perfectPower(i))
 
-# complexity O(n^3) with n is bit number
+
+
+def perfect_power(n):
+    r = int(math.log(n,2)) + 1
+    l = 2
+    while(True):
+        if(l>r):
+            return False
+        m = (r+l)//2  #chia nguyen
+        k = Decimal.__pow__(Decimal(n),Decimal(1/m))
+        ng = int(k)
+        
+        if(k == ng ):
+            return True
+        if(k < ng):
+            l = m + 1
+        else:
+            r = m - 1  
+    return True
+
+#print(perfect_power(443060353998445655840854662515542076714707))
+# complexity O(log2(n)) with n is bit number

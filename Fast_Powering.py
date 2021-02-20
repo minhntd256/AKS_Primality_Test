@@ -12,3 +12,4 @@ def fast_powering(g,a, N):
 
 
 # print(fast_powering(6,1,8))
+#Do Phuc tap: O(log(n)) //n la a

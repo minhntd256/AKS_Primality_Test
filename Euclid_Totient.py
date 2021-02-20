@@ -30,9 +30,13 @@ def phi(n):
         result -= int(result / n)
     return result
 
+#O(φ(n)) = O~(r^0.5)
+#  
 # Driver Code
 # for n in range(1, 11):
 #     print("phi(",n,") =", phi(n));
 
 # This code is contributed
 # by mits
+
+#O∼(r*sqrt(φ(r)) * log^3(n)) = O∼(r^3/2 * log^3(n)) = O∼(log21/2 n) = O∼(||n||10.5).
