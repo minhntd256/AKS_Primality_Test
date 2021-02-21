@@ -14,7 +14,8 @@ def tests(lowlim, uplim):
         if(sympy.isprime(n) != AKS_Wrapper(n)):
             exception = n
             break
-    end = time.time()
+    end = time.time() 
+    
     print(f'Passed tests from {lowlim}-{uplim}' if exception == 0 else f'Failed at {exception}')
     print(f'Took {end - start}')
 
